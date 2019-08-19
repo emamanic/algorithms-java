@@ -1,7 +1,7 @@
 public class SequentialSearch<T extends Number> {
 
 	public boolean search(T[] values, T value) {
-		if(values.length > 0) {
+		if(values != null && values.length > 0) {
 			for(int i = 0; i <= values.length - 1; i++) {
 				if(values[i].equals(value)) {
 					return true;
